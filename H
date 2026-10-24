@@ -1,0 +1,10 @@
+rickshaw-game/
+├── index.html
+├── style.css
+├── game.js
+└── assets/
+    ├── rickshaw.png   (আপনার নিজের ছবি দিবেন)
+    ├── bus.png
+    ├── car.png
+    ├── bike.png
+    └── meme1.mp3 ... (মেম সাউন্ড)
