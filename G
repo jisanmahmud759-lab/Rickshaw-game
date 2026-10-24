@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ঢাকা রিকশা মেম গেম 🛺</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- HUD -->
+    <div id="hud">
+      <div class="hud-item">🛺 স্কোর: <span id="score">0</span></div>
+      <div class="hud-item">❤️ জীবন: <span id="lives">3</span></div>
+      <div class="hud-item">⚡ স্পিড: <span id="speed">0</span></div>
+      <div class="hud-item">🏁 দূরত্ব: <span id="distance">0</span> মি</div>
+    </div>
+
+    <!-- মেম পপআপ -->
+    <div id="memePopup" class="hidden"></div>
+
+    <!-- স্টার্ট স্ক্রিন -->
+    <div id="startScreen" class="overlay">
+      <h1>🛺 ঢাকা রিকশা মেম গেম</h1>
+      <p>বাংলাদেশি রাস্তায় রিকশা চালান, গাড়ি-বাস এড়ান!</p>
+      <p class="controls">⌨️ WASD / তীর চিহ্ন দিয়ে চালান | 📱 মোবাইলে টাচ</p>
+      <button id="startBtn">শুরু করুন</button>
+    </div>
+
+    <!-- গেম ওভার -->
+    <div id="gameOverScreen" class="overlay hidden">
+      <h1>💥 গেম ওভার!</h1>
+      <p>আপনার স্কোর: <span id="finalScore">0</span></p>
+      <p>দূরত্ব: <span id="finalDistance">0</span> মিটার</p>
+      <button id="restartBtn">আবার চেষ্টা করুন</button>
+    </div>
+
+    <!-- মোবাইল কন্ট্রোল -->
+    <div id="mobileControls" class="hidden">
+      <button id="btnLeft">◀</button>
+      <button id="btnRight">▶</button>
+      <button id="btnUp">▲</button>
+      <button id="btnDown">▼</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
